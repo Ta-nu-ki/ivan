@@ -1,0 +1,27 @@
+/* ==========================================================================
+   page.css — внутренние страницы (коллабы, публикации, про автора)
+   ========================================================================== */
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.content {
+    width: min(900px, 100%);
+}
+
+.content h1 {
+    margin: 0 0 24px;
+    font-size: clamp(42px, 7vw, 92px);
+    font-weight: 300;
+    line-height: 0.95;
+}
+
+.content p {
+    margin: 0 0 1em;
+    font-size: clamp(18px, 2vw, 28px);
+    line-height: 1.4;
+}

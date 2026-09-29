@@ -1,0 +1,147 @@
+/* ==========================================================================
+   base.css — общие стили для всех страниц: шрифт, фон, логотип, меню
+   ========================================================================== */
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/montserrat-light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --color-bg: #c3bfc0;
+    --color-text: #000;
+    --font-main: "Montserrat", Arial, sans-serif;
+
+    --logo-width: min(180px, 16vw);
+    --edge: 28px; /* отступ логотипа и меню от края экрана */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    background: var(--color-bg) url("../assets/bg.webp") center / cover no-repeat fixed;
+    color: var(--color-text);
+    font-family: var(--font-main);
+    font-weight: 300;
+}
+
+a {
+    color: inherit;
+}
+
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+    outline: 2px solid var(--color-text);
+    outline-offset: 4px;
+}
+
+/* Текст только для скринридеров и поисковиков */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ---------- Логотип ---------- */
+
+.logo {
+    position: fixed;
+    top: var(--edge);
+    left: 16px;
+    z-index: 1000;
+    display: block;
+    width: var(--logo-width);
+    line-height: 0;
+    transition: opacity 0.45s ease;
+}
+
+.logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+/* ---------- Меню ---------- */
+
+.menu {
+    position: fixed;
+    left: var(--edge);
+    bottom: var(--edge);
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.02em;
+
+    transition: opacity 0.45s ease;
+}
+
+.menu a {
+    color: var(--color-text);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: opacity 0.2s ease;
+}
+
+.menu a:hover {
+    opacity: 0.55;
+}
+
+.menu .telegram {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    margin-top: 10px;
+}
+
+.menu .telegram img {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 700px) {
+    :root {
+        --edge: 20px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
