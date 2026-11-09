@@ -39,5 +39,33 @@ window.OBJECTS = [
         image: "images/objects/nivalyashka.png",
         year: "2025",
         description: "Игра слов материализуется в комбинированный ностальгический образ. Классическая неваляшка объединенная с дизайном Нивы отсылает к возможным воспоминаниям о детстве.\n\nС Ниваляшкой можно взаимодействовать\n\nМатериалы: смола, металл, акрил"
+    },
+    {
+        id: "object-05",
+        title: "Башня",
+        image: "images/objects/bashnya.png",
+        year: "2025",
+        description: "Описание объекта. Здесь можно разместить текст о работе."
+    },
+    {
+        id: "object-06",
+        title: "Клава",
+        image: "images/objects/klava.png",
+        year: "2025",
+        description: "Описание объекта. Здесь можно разместить текст о работе."
+    },
+    {
+        id: "object-07",
+        title: "НИВАКРУЖКА",
+        image: "images/objects/nivakruzhka.png",
+        year: "2025",
+        description: "Описание объекта. Здесь можно разместить текст о работе."
+    },
+    {
+        id: "object-08",
+        title: "Сумка",
+        image: "images/objects/sumka.png",
+        year: "2025",
+        description: "Описание объекта. Здесь можно разместить текст о работе."
     }
 ];
