@@ -15,28 +15,28 @@ window.OBJECTS = [
     {
         id: "object-01",
         title: "УАЗА",
-        image: "images/objects/uaz.webp",
+        image: "images/objects/uaza.png",
         year: "2025",
         description: "Описание объекта. Здесь можно разместить текст о работе."
     },
     {
         id: "object-02",
         title: "СУТУЛ",
-        image: "images/objects/sutul.webp",
+        image: "images/objects/sutul.png",
         year: "2025",
         description: "Описание объекта. Здесь можно разместить текст о работе."
     },
     {
         id: "object-03",
         title: "ПЛИТА",
-        image: "images/objects/plita.webp",
+        image: "images/objects/plita.png",
         year: "2025",
         description: "Описание объекта. Здесь можно разместить текст о работе."
     },
     {
         id: "object-04",
         title: "НИВАЛЯШКА",
-        image: "images/objects/nivalyashka.webp",
+        image: "images/objects/nivalyashka.png",
         year: "2025",
         description: "Игра слов материализуется в комбинированный ностальгический образ. Классическая неваляшка объединенная с дизайном Нивы отсылает к возможным воспоминаниям о детстве.\n\nС Ниваляшкой можно взаимодействовать\n\nМатериалы: смола, металл, акрил"
     }
